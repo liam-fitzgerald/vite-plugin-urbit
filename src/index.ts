@@ -1,3 +1,4 @@
+import htmlPlugin from "vite-plugin-html-config";
 export interface UrbitPluginConfig {
   /**
    * The desk that the agents for this app are running off
@@ -16,11 +17,7 @@ export interface UrbitPluginConfig {
   target: string;
 }
 
-/**
- * Setup a vite dev server for urbit development
- *
- */
-export default (desk: string, base: string, target: string) => {
+const UrbitProxyPlugin = ({ base, target }: UrbitPluginConfig) => {
   const basePath = `/apps/${base}/`;
   return {
     name: "return-partial",
@@ -38,4 +35,19 @@ export default (desk: string, base: string, target: string) => {
       },
     }),
   };
+};
+
+/**
+ * Setup a vite dev server for urbit development
+ *
+ */
+export default (config: UrbitPluginConfig) => {
+  const htmlPluginOpt = {
+    headScripts: [
+      { src: `/apps/${config.base}/desk.js` },
+      { src: "/session.js" },
+    ],
+  };
+
+  return [UrbitProxyPlugin(config), htmlPlugin(config)];
 };

@@ -32,5 +32,7 @@
     "url": "https://github.com/liam-fitzgerald/vite-plugin-urbit/issues"
   },
   "homepage": "https://github.com/liam-fitzgerald/vite-plugin-urbit#readme",
-  "dependencies": {}
+  "dependencies": {
+    "vite-plugin-html-config": "^1.0.6"
+  }
 }
