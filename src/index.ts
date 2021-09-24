@@ -49,5 +49,5 @@ export default (config: UrbitPluginConfig) => {
     ],
   };
 
-  return [UrbitProxyPlugin(config), htmlPlugin(config)];
+  return [UrbitProxyPlugin(config), htmlPlugin(htmlPluginOpt)];
 };
