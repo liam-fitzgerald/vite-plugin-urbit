@@ -5,7 +5,7 @@
     "declaration": true,
     "esModuleInterop": true,
     "moduleResolution": "Node",
-    "module": "ESNext"
+    "module": "CommonJS"
   },
   "files": ["./src/index.ts"]
 }

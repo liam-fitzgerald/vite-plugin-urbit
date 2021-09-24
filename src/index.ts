@@ -1,4 +1,4 @@
-import htmlPlugin from "vite-plugin-html-config";
+import * as htmlPlugin from "vite-plugin-html-config";
 export interface UrbitPluginConfig {
   /**
    * The desk that the agents for this app are running off
