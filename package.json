@@ -11,12 +11,13 @@
   },
   "files": [
     "dist",
+    "node_modules",
     "package.json",
     "README.md"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup ./src/index.ts",
+    "build": "tsc",
     "prepare": "npm run build"
   },
   "author": "Tlon Corporation",
@@ -25,7 +26,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tsup": "^5.1.0",
     "typescript": "^4.4.3"
   },
   "bugs": {
