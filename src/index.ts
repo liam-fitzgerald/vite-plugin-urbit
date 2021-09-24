@@ -41,7 +41,7 @@ const UrbitProxyPlugin = ({ base, target }: UrbitPluginConfig) => {
  * Setup a vite dev server for urbit development
  *
  */
-export default (config: UrbitPluginConfig) => {
+export const urbitPlugin = (config: UrbitPluginConfig) => {
   const htmlPluginOpt = {
     headScripts: [
       { src: `/apps/${config.base}/desk.js` },
