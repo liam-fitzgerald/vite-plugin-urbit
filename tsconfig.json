@@ -3,7 +3,7 @@
     "outDir": "./dist",
     "sourceMap": true,
     "declaration": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "moduleResolution": "Node",
     "module": "CommonJS"
   },

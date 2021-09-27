@@ -1,10 +1,6 @@
 import * as htmlPlugin from "vite-plugin-html-config";
 export interface UrbitPluginConfig {
   /**
-   * The desk that the agents for this app are running off
-   */
-  desk: string;
-  /**
    * The base that this app will be served at. This should be the same
    * as the `base` property on the docket file
    */
