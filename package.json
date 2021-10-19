@@ -1,6 +1,6 @@
 {
   "name": "@urbit/vite-plugin-urbit",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "A plugin to setup proxying from a vite devserver to an Urbit ship",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

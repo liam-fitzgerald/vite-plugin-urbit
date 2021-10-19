@@ -1,9 +1,7 @@
 import * as htmlPlugin from "vite-plugin-html-config";
-import { ServerOptions } from "vite";
+import { ProxyOptions } from "vite";
 
-type Proxy = ServerOptions['proxy'];
-
-export interface UrbitPluginConfig extends Proxy {
+export interface UrbitPluginConfig extends ProxyOptions {
   /**
    * The base that this app will be served at. This should be the same
    * as the `base` property on the docket file
@@ -27,11 +25,11 @@ const UrbitProxyPlugin = ({ base, target, ...options }: UrbitPluginConfig) => {
         proxy: {
           [`^${basePath}desk.js`]: {
             target,
-            options
+            ...options
           },
           [`^((?!${basePath}).)*$`]: {
             target,
-            options
+            ...options
           },
         },
       },
