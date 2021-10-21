@@ -1,6 +1,6 @@
 {
   "name": "@urbit/vite-plugin-urbit",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "A plugin to setup proxying from a vite devserver to an Urbit ship",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/liam-fitzgerald/vite-plugin-urbit#readme",
   "dependencies": {
-    "vite-plugin-html-config": "^1.0.6"
+    "vite-plugin-html-config": "^1.0.6",
+    "vite-plugin-rewrite-all": "^0.1.2"
   }
 }
