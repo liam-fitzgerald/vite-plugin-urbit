@@ -1,4 +1,5 @@
 import * as htmlPlugin from "vite-plugin-html-config";
+import rewriteAll from "vite-plugin-rewrite-all";
 import { ProxyOptions } from "vite";
 
 export interface UrbitPluginConfig extends ProxyOptions {
@@ -49,5 +50,5 @@ export const urbitPlugin = (config: UrbitPluginConfig) => {
     ],
   };
 
-  return [UrbitProxyPlugin(config), htmlPlugin(htmlPluginOpt)];
+  return [UrbitProxyPlugin(config), rewriteAll(), htmlPlugin(htmlPluginOpt)];
 };
