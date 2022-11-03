@@ -45,10 +45,12 @@ const UrbitProxyPlugin = ({ base, target, ...options }: UrbitPluginConfig) => {
 export const urbitPlugin = (config: UrbitPluginConfig) => {
   const htmlPluginOpt = {
     headScripts: [
-      { src: `/apps/${config.base}/desk.js` },
-      { src: "/session.js" },
+      { src: `${config.target}/apps/${config.base}/desk.js` },
+      { src: `${config.target}/session.js` },
     ],
   };
 
+  // not sure why this ignore is needed, but the package won't build otherwise
+  // @ts-ignore
   return [UrbitProxyPlugin(config), rewriteAll(), htmlPlugin(htmlPluginOpt)];
 };
