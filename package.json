@@ -29,7 +29,7 @@
     "@types/node": "^16.11.0",
     "esbuild": "^0.13.2",
     "typescript": "^4.4.3",
-    "vite": "^2.6.5"
+    "vite": "^3.0.0"
   },
   "bugs": {
     "url": "https://github.com/liam-fitzgerald/vite-plugin-urbit/issues"
@@ -37,6 +37,6 @@
   "homepage": "https://github.com/liam-fitzgerald/vite-plugin-urbit#readme",
   "dependencies": {
     "vite-plugin-html-config": "^1.0.6",
-    "vite-plugin-rewrite-all": "^0.1.2"
+    "vite-plugin-rewrite-all": "^1.0.0"
   }
 }

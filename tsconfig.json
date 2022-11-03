@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist",
     "sourceMap": true,
-    "lib": ["ES2021"],
+    "lib": ["ES2021", "dom"],
     "declaration": true,
     "esModuleInterop": false,
     "moduleResolution": "Node",
